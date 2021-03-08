@@ -1,0 +1,107 @@
+.container {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    margin: 100px auto;
+    border: 2px solid #2c21c4;
+}
+.container .nav-dots {
+    height: 25px;
+    margin: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.container .nav-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0d1137;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.container .nav-dots .dot.active {
+    background-color: #eec60f;
+}
+.container .wrapper {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.slider {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+}
+.slider .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+.slider .yellow {
+    background-color: #eec60f;
+}
+.slider .blue {
+    color: #fff;
+    background-color: #0d1137;
+}
+.slider .gray {
+    background-color: #6b7982;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+    border-radius: 50px;
+    background: #297fe2;
+    z-index: 2;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.arrow path {
+    -webkit-transition: stroke-opacity 0.3s ease-in-out;
+    -o-transition: stroke-opacity 0.3s ease-in-out;
+    transition: stroke-opacity 0.3s ease-in-out;
+}
+.arrow:hover path {
+    stroke-opacity: 1;
+}
+.arrow .left,
+.arrow .right {
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.left {
+    left: -20px;
+}
+.right {
+    right: -20px;
+}

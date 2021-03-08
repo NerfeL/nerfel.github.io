@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.min.css">
+    <title>asdf</title>
+  </head>
+  <body></body>
+  <header>
+    <div class="header-hat">
+      <div class="header-logo"><img src="images/logo.png" alt="logo" srcset=""></div>
+      <div class="header-numberphone"><a href="tel:+7-800-100-5005">8-800-100-5005</a><a href="tel:+7-3452-522-000">+7 (3252) 522-000</a></div>
+    </div>
+    <div class="neader-nav">
+      <ul class="nav"> 
+        <li> <a class="nav-link" href="#">Кредитные карты</a></li>
+        <li> <a class="nav-link" href="#">Вклады</a></li>
+        <li> <a class="nav-link" href="#">Дебетовая карта</a></li>
+        <li> <a class="nav-link" href="#">Страхование</a></li>
+        <li> <a class="nav-link" href="#">Друзья</a></li>
+        <li> <a class="nav-link" href="#">Интернет-банк</a></li>
+      </ul>
+    </div>
+  </header>
+  <main> 
+    <section class="nav-crumbs"> 
+      <div class="nav-crumbs-wrap"> <a href="#">Главная </a><span>- </span><a href="#">Вклады </a><span>- </span><span>Калькулятор </span></div>
+    </section>
+    <section class="calc"> 
+      <h1 class="calc__title">Калькулятор</h1>
+      <form class="calc__form" name="test" action="calc.php" method="POST">
+        <div class="calc__data">
+          <div class="row">
+            <label for="date-reg-deposit">Дата оформления вклада</label>
+            <div class="input"> 
+              <input class="input-fields__field custom-date" type="text" id="date-reg-deposit" name="date" placeholder="дд.мм.гггг" required>
+            </div>
+          </div>
+          <div class="row">
+            <label for="summ-deposit">Сумма вклада</label>
+            <div class="input"> 
+              <input class="input-fields__field" type="text" id="summ-deposit" name="summ-deposit" required>
+            </div>
+            <div class="sliderLine" id="slider-summ-deposit"></div>
+          </div>
+          <div class="row">
+            <label for="term-deposit">Срок вклада</label>
+            <div class="input"> 
+              <select class="input-fields__field" name="term-deposit" id="term-deposit"> 
+                <option value="12">1 год</option>
+                <option value="24">2 года</option>
+                <option value="36">3 года</option>
+                <option value="48">4 года</option>
+                <option value="60">5 лет</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <label for="adjunction">Пополнение вклада</label>
+            <div class="input"> 
+              <input type="radio" name="adjunction" id="adjunction" value="no" checked><span>Нет</span>
+              <input type="radio" name="adjunction" value="yes"><span>Да</span>
+            </div>
+          </div>
+          <div class="row">
+            <label for="summ-adjunction">Сумма пополнения вклада                   </label>
+            <div class="input"> 
+              <input class="input-fields__field" type="text" id="summ-adjunction" name="summ-adjunction" required>
+            </div>
+            <div class="sliderLine" id="slider-summ-adjunction"></div>
+          </div>
+        </div>
+        <input class="submit-button" type="submit" value="Рассчитать">
+        <p class="result">Результат: <span class="num">0</span><span> руб</span></p>
+      </form>
+    </section>
+  </main>
+  <footer> 
+    <div class="footer-content"> 
+      <div class="footer-nav"> 
+        <ul class="nav"> 
+          <li> <a class="nav-link" href="#">Кредитные карты</a></li>
+          <li> <a class="nav-link" href="#">Вклады</a></li>
+          <li> <a class="nav-link" href="#">Дебетовая</a></li>
+          <li> <a class="nav-link" href="#">Страхование</a></li>
+          <li> <a class="nav-link" href="#">Друзья</a></li>
+          <li> <a class="nav-link" href="#">Интернет-банк</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"> </script>
+</html>
